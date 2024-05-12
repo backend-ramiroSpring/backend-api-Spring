@@ -22,8 +22,8 @@ public class Transaction {
     @JoinColumn(name = "source_account_id", nullable=false)
     private Account sourceAccount;      /* Por la asociacion que existe entre estas 2 cuentas */
 
-    @JoinColumn(name = "target_account_id", nullable=false)
     @ManyToOne
+    @JoinColumn(name = "target_account_id", nullable=false)
     private Account targetAccount;      /* Por la asociacion que existe entre estas 2 cuentas */
 
     @Column(name = "amount", nullable = false)

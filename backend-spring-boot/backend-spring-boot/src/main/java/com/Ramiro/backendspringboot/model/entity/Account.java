@@ -1,14 +1,13 @@
 package com.Ramiro.backendspringboot.model.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Data   /* Genera todos los metodos GET, SET, etc */
+@Getter
+@Setter/* Genera todos los metodos GET, SET, etc */
 @NoArgsConstructor  /* Constructor sin argumentos */
 @AllArgsConstructor /* Constructor con argumentos */
 
